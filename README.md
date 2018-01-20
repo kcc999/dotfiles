@@ -7,4 +7,10 @@ It only works on Debian based systems, as the install scripts use the apt packag
 
 The installation scripts automatically install for you i3,neovim,zsh,clang,feh,compton,cmus and ranger.
 
+To install the config run the following inside the repo directory:
+
+```
+sudo python3 scripts/init.py 
+```
+
 
