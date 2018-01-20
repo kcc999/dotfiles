@@ -89,7 +89,8 @@ autocmd FileType cpp inoremap ;struct<tab> struct x<Enter>{<Enter><Enter>};<Esc>
 autocmd FileType tex inoremap ;s \documentclass{article}<Enter>\usepackage[utf8]{inputenc}<Enter>\usepackage[T1]{fontenc}<Enter>\author{Karol Ciechlecki}<Enter>\title{}<Enter><Enter>\begin{document}<Enter><Enter>\maketitle<Enter><Enter><Enter><Enter><Enter><Enter>\end{document}
 
 
-
+"r markdown
+autocmd FileType rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 
 
