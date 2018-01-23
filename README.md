@@ -13,4 +13,8 @@ To install the config run the following inside the repo directory:
 sudo python3 scripts/init.py 
 ```
 
+To copy your current config into this directory if you plan to use it to backup your stuff:
 
+```
+python3 sync.py
+```
