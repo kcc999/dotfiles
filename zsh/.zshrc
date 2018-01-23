@@ -94,3 +94,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 PATH="${PATH}:${HOME}/.local/bin"
 (cat ~/.cache/wal/sequences &)
+
+
+#aliases
+alias v=vim
+alias f="feh --draw-filename ."
