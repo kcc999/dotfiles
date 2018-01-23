@@ -29,11 +29,11 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 gaps inner 10
 gaps outer 10
 #set background
-exec --no-startup-id feh --bg-scale /home/sorrz/Downloads/landscape1.jpg
+exec --no-startup-id feh --bg-scale /home/sorrz/Pictures/wallpapers/Landscapes/planet_beyond_clouds.jpg
 #start compton
 exec --no-startup-id compton
 # start a terminal
@@ -42,6 +42,8 @@ bindsym $mod+Return exec xterm -fn -misc-fixed-bold-r-normal--15------iso8859-15
 bindsym $mod+Shift+q kill
 # start waterfox
 bindsym $mod+b exec chromium
+#spotify
+bindsym $mod+shift+s exec spotify
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -56,11 +58,7 @@ for_window [instance="dropdown"] resize set 625 400
 for_window [instance="dropdown"] move position center
 bindsym $mod+n exec xterm -fn -misc-fixed-bold-r-normal--15------iso8859-15 -fg grey -name dropdown
 
-
-
-
-
-
+#change gaps size
 bindsym $mod+o gaps inner current plus 5
 bindsym $mod+p gaps inner current minus 5
 

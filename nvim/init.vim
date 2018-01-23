@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 
+Plugin 'scrooloose/nerdtree'
+
 Plugin 'https://github.com/tpope/vim-surround'
 
 Plugin 'wting/rust.vim'
@@ -65,7 +67,7 @@ autocmd FileType html inoremap ;a <a href=""></a><Space><Esc>F"i
 
 autocmd FileType html inoremap ;t <table border="1"><Enter><tr></tr><Enter></table><Esc>
 
-
+autocmd FileType html inoremap ;dc<tab> <div class=" "> </div>
 
 "c++ bindings
 
@@ -82,6 +84,12 @@ autocmd FileType cpp inoremap ;t<tab> template<typename T>
 autocmd FileType cpp inoremap ;while<tab> while()<Enter>{<Enter><Enter>}
 
 autocmd FileType cpp inoremap ;struct<tab> struct x<Enter>{<Enter><Enter>};<Esc>BBBBxi
+
+
+
+"c bindings
+autocmd FileType c inoremap ;main<tab> #include<stdio.h><Enter><Enter>int main()<Enter>{<Enter><Enter>return 0;<Enter>} 
+
 
 
 "LaTeX binds
