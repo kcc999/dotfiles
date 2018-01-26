@@ -37,11 +37,12 @@ exec --no-startup-id feh --bg-scale /home/sorrz/Pictures/wallpapers/Landscapes/p
 #start compton
 exec --no-startup-id compton
 # start a terminal
-bindsym $mod+Return exec xterm -fn -misc-fixed-bold-r-normal--15------iso8859-15 -fg grey
+#bindsym $mod+Return exec xterm -fn -misc-fixed-bold-r-normal--15------iso8859-15 -fg grey
+bindsym $mod+Return exec st
 # kill focused window
 bindsym $mod+Shift+q kill
 # start waterfox
-bindsym $mod+b exec chromium
+bindsym $mod+b exec firefox-quantum
 #spotify
 bindsym $mod+shift+s exec spotify
 # start dmenu (a program launcher)
