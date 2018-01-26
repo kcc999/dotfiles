@@ -57,17 +57,23 @@ inoremap {}     {}
 set relativenumber
 
 "html bindings
-autocmd FileType html inoremap ;h <!DOCTYPE html><Enter><html lang="es"><Enter><head><Enter><meta charset="utf-8"><Enter></head><Enter><body><Enter></body><Enter></html>
+autocmd FileType html inoremap ;h<tab> <!DOCTYPE html><Enter><html lang="es"><Enter><head><Enter><meta charset="utf-8"><Enter></head><Enter><body><Enter></body><Enter></html>
 
-autocmd FileType html inoremap ;p <p></p><Space><Esc>FpT>i
+autocmd FileType html inoremap ;p<tab> <p></p><Space><Esc>FpT>i
 
-autocmd FileType html inoremap ;d <div></div><Space><Esc>FdT>i
+autocmd FileType html inoremap ;d<tab> <div></div><Space><Esc>FdT>i
 
-autocmd FileType html inoremap ;a <a href=""></a><Space><Esc>F"i
+autocmd FileType html inoremap ;a<tab> <a href=""></a><Space><Esc>F"i
 
-autocmd FileType html inoremap ;t <table border="1"><Enter><tr></tr><Enter></table><Esc>
+autocmd FileType html inoremap ;t<tab> <table border="1"><Enter><tr></tr><Enter></table><Esc>
 
 autocmd FileType html inoremap ;dc<tab> <div class=" "> </div>
+
+autocmd FileType html inoremap ;l<tab> <link href=" " rel="stylesheet">
+
+autocmd FileType html inoremap ;img<tab> <img src="">
+
+autocmd FileType html inoremap ;s<tab> <span class=""> </span>
 
 "c++ bindings
 
@@ -99,8 +105,6 @@ autocmd FileType tex inoremap ;s \documentclass{article}<Enter>\usepackage[utf8]
 
 "r markdown
 autocmd FileType rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
-
-
 
 
 
