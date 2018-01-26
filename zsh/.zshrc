@@ -99,3 +99,5 @@ PATH="${PATH}:${HOME}/.local/bin"
 #aliases
 alias v=vim
 alias f="feh --draw-filename ."
+alias i3c='vim .i3/config'
+alias vc='vim .config/nvim/init.vim'
