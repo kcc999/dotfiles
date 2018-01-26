@@ -5,7 +5,7 @@ dir_list = ['/usr/bin/nvim', '/usr/bin/zsh', '/usr/bin/i3']
 pkgs = ['neovim', 'zsh', 'i3']
 
 #dotfiles
-files_list = ['../zsh/.zshrc/', '../.i3/']
+files_list = ['../zsh/.zshrc/', '../.i3/', '../.selected_editor]
 cfg_pkgs
 
 
