@@ -1,3 +1,7 @@
+# Edit this configuration file to define what should be installed on
+# your system.  Help is available in the configuration.nix(5) man page
+# and in the NixOS manual (accessible by running ‘nixos-help’).
+
 { config, pkgs, ... }:
 
 {
@@ -84,15 +88,21 @@
       kitty
       neovim
       git
+      neofetch
+      rofi-wayland-unwrapped
+      wlr-randr
+    #  thunderbird
     ];
   };
 
   # Install firefox.
   programs.firefox.enable = true;
-
+  programs.hyprland.enable = true;
+  programs.waybar.enable = true;
+  programs.nm-applet.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
+  
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
